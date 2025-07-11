@@ -1,0 +1,11 @@
+# Ignore all .iml files
+*.iml
+**/*.iml
+
+# Ignore all .idea directories
+.idea/
+**/.idea/
+
+# Ignore all out directories (e.g., build output)
+out/
+**/out/
