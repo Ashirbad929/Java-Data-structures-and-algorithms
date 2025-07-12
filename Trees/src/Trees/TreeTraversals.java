@@ -18,8 +18,8 @@ public class TreeTraversals {
     static void Preorder(Node root){
         if(root!=null){
             System.out.print(root.data+"-->");
-            Inorder(root.left);
-            Inorder(root.right);
+            Preorder(root.left);
+            Preorder(root.right);
         }
     }
     /*** PreOrder ***
@@ -27,8 +27,8 @@ public class TreeTraversals {
      */
     static void Postorder(Node root){
         if(root!=null){
-            Inorder(root.left);
-            Inorder(root.right);
+            Postorder(root.left);
+            Postorder(root.right);
             System.out.print(root.data+"-->");
         }
     }
@@ -43,6 +43,11 @@ public class TreeTraversals {
         root.right.right=new Node(110);
 
         //print
-        Inorder(root);
+//        Inorder(root);
+        Preorder(root);
+        System.out.println("\npostorder");
+        Postorder(root);
+
     }
+
 }
